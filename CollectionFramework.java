@@ -39,6 +39,9 @@ public class CollectionFramework {
         //System.out.println("Contents of arr(Array's content coverted to String): " + Arrays.toString(arr));
 
 
+
+
+
         //Onto LinkedList Class
         LinkedList<String> ll = new LinkedList<String>();
         ll.add("B");
@@ -50,17 +53,48 @@ public class CollectionFramework {
         ll.addFirst("A");
         ll.addLast("Z");
 
-        System.out.println("Contents of ll: " + ll);
+        //System.out.println("Contents of ll: " + ll);
 
-        ll.add(1, "A2");
-        System.out.println("Contents of ll after adding A2 at index 1: " + ll);
+        ll.add(1, "A2"); // adding element at index 1
+        //System.out.println("Contents of ll after adding A2 at index 1: " + ll);
+
+        //removing elements from the linked list
+        ll.remove("A2");
+        ll.remove(2); //removes from index 2
+        ll.removeFirst();
+        ll.removeLast();
+       // System.out.println("Contents of ll after removing elements: " + ll);
+
+        //get and set values
+        String val = ll.get(2);
+
+        ll.set(2,val + "_modified");
+        //System.out.println("Contents of ll after modifying element at index 2: " + ll);
 
 
 
 
+        //HashMap Class
+        HashMap<String,Double> hm = new HashMap<String,Double>();
+        hm.put("John Doe",3434.0);
+        hm.put("John toe",3434.0);
+        hm.put("John Woe",3434.0);
+        hm.put("John Loe",3434.0);
 
+        System.out.println(hm);
 
+        double balance = hm.get("John Woe");
+        hm.put("John Woe",balance + 1000);
+        System.out.println("The new Salary of John Woe = " + hm.get("John Woe"));
+        
+        //implementing the entryset() method to get the set of entries in the hashmap
+        Set<Map.Entry<String,Double>> set = hm.entrySet();
+        for(Map.Entry<String,Double> me : set){
+            System.out.print(me.getKey() + ": ");
+            System.out.println(me.getValue());
+        }
 
+        
 
 
 
