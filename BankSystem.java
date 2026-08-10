@@ -14,7 +14,7 @@ class BankAccount implements AccountOperations {
     private double balance;
     private String password;
     private String accountType;
-    private static final String BankName = "MyBank";
+    //private static final String BankName = "MyBank";
 
     public BankAccount(String name, int accountNumber, double balance, String password, String accountType) {
         this.name = name;

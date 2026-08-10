@@ -35,7 +35,7 @@ public class DuplicateDetection {
 
        // System.out.println("The values after removing duplicates are: " + al);
 
-       
+       sc.close();
     }
 }
 
