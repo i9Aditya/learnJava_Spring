@@ -1,0 +1,3 @@
+Line 1: Hello, Java File I/O!
+Line 2: Demonstrating NIO Path operations.
+Line 3: Appending new content seamlessly.
