@@ -5,7 +5,6 @@ public class FileIO {
         int i;
         FileInputStream fin;
         FileOutputStream fout;
-
         // try{
         //     fin = new FileInputStream("the_echoing_cave.txt");
         // }catch(FileNotFoundException e){
