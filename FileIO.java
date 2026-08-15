@@ -2,7 +2,7 @@ import java.io.*;
 
 public class FileIO {
     public static void main(String[] args) throws IOException{
-        int i;
+        int i; //"i contains the byte value returned by read() as an int, or -1 when the end of the file is reached."
         FileInputStream fin;
         FileOutputStream fout;
         // try{
